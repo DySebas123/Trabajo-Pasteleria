@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Don José</title>
+        <link rel="stylesheet" th:href="@{/css/styles.css}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header" id="navegacion">
+            <img th:src="@{/images/DonJoseLogoF.png}" alt="logo">
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="nav-enlace" th:href="@{/inicio}">Inicio</a></li>
+                    <li><a class="nav-enlace" th:href="@{/carta}">Carta</a></li>
+                    <li><a class="nav-enlace" th:href="@{/nosotros}">Nosotros</a></li>
+                    <li><a class="nav-enlace" th:href="@{/contacto}">Contactanos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="acciones">
+                <button class="button" onclick="location.href='/login'">Iniciar Sesión</button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenido a Don José</h1>
+                <p>La mejor pastelería de Arequipa</p>
+            </div>
+        </section>
+
+        <section class="sobreNosotros">
+            <div  class="sobreNosotros-content">
+                <h2>¿Quiénes Somos?</h2>
+                <p>En Don José, convertimos cada momento en una experiencia dulce con nuestras creaciones
+                    de repostería artesanal. Desde clásicos peruanos hasta innovaciones modernas, ofrecemos
+                    una variedad de postres que combinan tradición y técnica. Ubicados en Arequipa, somos
+                    el lugar perfecto para endulzar celebraciones especiales o simplemente disfrutar un
+                    capricho inolvidable.
+                </p>
+            </div>
+            <img th:src="@{/images/tiendaDonJose.png}" alt="tienda">
+        </section>
+
+        <section>
+            <h2 class="text-center">Lo que MÁS PIDEN</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                        <div class="card" style="width: 35rem;">
+                            <img th:src="@{/images/tres leches.jpg}" class="card-img-top" alt="postre">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2.3rem;">Tres Leches</h5>
+                                <p class="card-text" style="font-size: 1.5rem;">S/. 18</p>
+                                <a href="#" class="btn btn-primary" style="font-size: 1.6rem;">Pidelo YA</a>
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                        <div class="card" style="width: 35rem;">
+                            <img th:src="@{/images/mazamorra.jpg}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2.3rem;">Mazamorra de Lacayote</h5>
+                                <p class="card-text" style="font-size: 1.5rem;">S/. 20</p>
+                                <a href="#" class="btn btn-primary" style="font-size: 1.6rem;">Pidelo YA</a>
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                        <div class="card" style="width: 35rem;">
+                            <img th:src="@{/images/tortazapallo.jpg}"class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2.3rem;">Torta de Zapallo</h5>
+                                <p class="card-text" style="font-size: 1.5rem;">S/. 15</p>
+                                <a href="#" class="btn btn-primary" style="font-size: 1.6rem;">Pidelo YA</a>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Don José. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <script th:src="@{/js/script.js}"></script>
+    </body>
+</html>

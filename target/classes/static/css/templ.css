@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(90deg, #d8b4ff, #ff7f7f, #d8b4ff);
+  background-size: 300% 100%;
+  animation: flow 8s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
